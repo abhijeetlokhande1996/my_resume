@@ -40,7 +40,7 @@
       }
     </style>
   </head>
-  <body onload="make_alteration()">
+  <body>
     <div class="page">
       <div class="container">
         <div class="d-flex justify-content-center align-items-center">
@@ -49,7 +49,9 @@
           </h6>
         </div>
         <div class="d-flex justify-content-center align-items-center">
-          <h6 class="f9">London, United Kingdom, abl.ds@outlook.com</h6>
+          <h6 class="f9" id="contact_info">London, United Kingdom, abhijeetlokhande1996@gmail.com</h6>
+          <!-- <h6>abl.ds@outlook.com</h6> -->
+          <!-- <h6>abhijeetlokhande1996@gmail.com</h6>-->
         </div>
         <div class="d-flex justify-content-center align-items-center">
           <h6 class="f9">
@@ -98,7 +100,7 @@
               Modelling, SQL, NoSQL, Data orchestration, Regression,
               Classification, Anomaly Detection, Keras, S3, Docker, Data
               Analysis, PySpark, Git, Time series forecasting, Feature
-              Engineering.
+              Engineering, GIS Modelling, Geospatial data products, Geospatial python libraries, Computer Vision, Docker.
             </h6>
           </div>
         </div>
@@ -275,5 +277,26 @@
         </div>
       </div>
     </div>
+    <!-- <div class="row">
+      <div class="col d-flex">
+          <button type="button" onclick="print_al_resume()">Print AL Resume</button>
+      </div>
+      <div class="col">
+      <button type="button" onclick="print_ablds_resume()">Print ABL.DS Resume</button>
+      </div>
+    </div> -->
+    <script>
+      function print_al_resume() {
+        contactInfo = "London, United Kingdom, abhijeetlokhande1996@gmail.com";
+        document.getElementById("contact_info").innerHTML = contactInfo;
+        window.print();
+      }
+      function print_ablds_resume() {
+        contactInfo = "London, United Kingdom, abl.ds@outlook.com";
+        document.getElementById("contact_info").innerHTML = contactInfo;
+        window.print();
+        window.print();
+      }
+    </script>
   </body>
 </html>
